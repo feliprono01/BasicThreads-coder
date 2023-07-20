@@ -1,0 +1,138 @@
+.tienda{
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+    grid-template-rows: 80px 300px 300px 300px;
+    grid-template-areas: 
+    "actions actions actions"
+    "filters prod1 prod1"
+    "filters prod2 prod3"
+    "filters prod2 prod4";
+    gap: 8px;
+    padding: 20px;
+    .filters{
+        padding: 0 20px 30px 30px;
+        grid-area: filters;
+        a{
+            color: $white;
+            font-size: $textSm;
+            text-decoration: none;
+            margin-bottom: 4px;
+            text-transform: lowercase;
+            &:hover{
+                color:$keyColor;
+            }
+        }
+        span{
+            display: block;
+            color: $keyColor;
+            margin-top: 8px ;
+            margin-bottom: 3px ;
+            font-size: $textMd;
+            font-weight: $textBold;
+        }
+        label{
+            font-size: $textSm;
+            font-weight: $textLight;
+            color: $keyColor;
+            font-weight: $textBold;
+        }
+        select{
+            color: $white;
+            border: none;
+            background-color: $darkGrey;
+            margin-bottom: 10px;
+            font-size: $textMd;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        li{
+            padding-left: 10px;
+            list-style: none;
+        }
+    }
+    .actions{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 10px 10px;
+        padding: 0 30px;
+        grid-area: actions;
+        button{
+            margin-left: 10px;
+            background-color: $softGrey;
+            color: $keyColor;
+            padding: 6px;
+            border: none;
+            border-radius: 8px;
+            &:hover{
+                background-color: $white;
+            }
+        }
+        input{
+            padding: 6px;
+            border-radius: 8px;
+            border: none;
+            background-color: $softGrey;
+            color: $white;
+        }
+    }
+    .prod1{
+        grid-area: prod1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 80px;
+        p{
+            width: 60%;
+            margin-left: 20px;
+            text-align: center;
+        }
+    }
+    .prod2{
+        grid-area: prod2;
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        align-items: center;
+        padding: 0 80px;
+        p{
+            text-align: center;
+            margin-top: 25px; 
+        }
+    }
+    .prod3{
+        grid-area: prod3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        p{
+            text-align: center;
+            margin-top: -50px;
+        }
+        img{
+            margin-top: -80px;
+        }
+    }
+    .prod4{
+        grid-area: prod4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            margin-top: -60px;
+            text-align: center;
+        }
+        img{
+            margin-top: -80px;
+        }
+    }
+    section{
+        img{
+            width: 350px;
+        }
+    }
+
+}

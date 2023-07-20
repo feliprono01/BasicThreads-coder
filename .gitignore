@@ -2,6 +2,6 @@
 *.map
 *.vscode
 *.ai
-node_module/
+node_modules/
 passwords.txt
 envio.php

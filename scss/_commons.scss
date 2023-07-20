@@ -1,0 +1,161 @@
+//selectores comunes a todo el proyecto
+*{
+    font-family: $mainFont;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/Black\ Storm\ Clouds\ Wall\ Mural\ -\ Murals\ Your\ Way.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+header img{
+    width: 100%;
+}
+.mensaje-inicial{
+    background-color: $keyColor;
+    padding: 6px;
+    font-size: 15px;
+}
+h1,h2{
+    color:$secondaryColor;
+}
+h1{
+    font-size:$textXx;
+    padding: 20px;
+}
+h2{
+    font-size:$textXl;
+}
+p{
+    font-size:$textXm;
+    line-height: 1.2em;
+    font-weight: $textLight;
+}
+
+//footer
+
+footer{
+    background-color:$mainColor;
+    padding: 8px 30px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    svg{
+        width: 30px;
+        height: 30px;
+        fill: $keyColor;
+        margin-right: 10px;
+    }
+    svg:hover{
+        fill:$white;
+    }
+    div{
+        img{
+        width: 150px; 
+        }
+    }
+    div{    
+        ul{
+            list-style: none ;
+            margin-top: 20px;
+            li{
+                a{
+                    text-decoration: none;
+                    color: $keyColor;
+                    font-size: $textSm;
+                    font-weight:$textBold;
+                    &:hover{
+                        color:$white
+                    }
+                }
+            } 
+        }    
+    }
+}
+
+//utilities
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-white{
+    color: $white;
+}
+.text-dark{
+    color: $keyColor;
+}
+.text-grey{
+    color: $grey;
+}
+.text-italic{
+    font-style: italic;
+}
+.text-bold{
+    font-weight:$textBold;
+}
+.bg-grey{
+    background-image: url(../img/bg\ angels.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    color: $white;
+
+}
+.bg-colorgrey{
+    background-color: $grey;
+}
+.bg-white{
+    background-color: $white;
+}
+.container{
+    background-image: url(../img/Black\ Storm\ Clouds\ Wall\ Mural\ -\ Murals\ Your\ Way.jpg);
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 50px;
+    border: solid black 2px;
+    overflow: auto;
+    border-radius: 10px;
+    color: $grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: justify;
+    
+}
+.titles{
+    background-image: url(../img/Black\ Storm\ Clouds\ Wall\ Mural\ -\ Murals\ Your\ Way.jpg);
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 50px;
+    border: none black 2px;
+    overflow: auto;
+    border-radius: 10px;
+    color: $grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+//contacto
+
+.btn.bg-white.text-bold.mt-3.button-contact:hover{
+    background-color: $keyColor;
+    color: $yellow;
+}
+
+

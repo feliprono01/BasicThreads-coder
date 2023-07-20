@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2? family= Roboto:wght@300;400 & display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/Black\ Storm\ Clouds\ Wall\ Mural\ -\ Murals\ Your\ Way.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+header img {
+  width: 100%;
+}
+
+.mensaje-inicial {
+  background-color: black;
+  padding: 6px;
+  font-size: 15px;
+}
+
+h1, h2 {
+  color: rgb(27, 26, 26);
+}
+
+h1 {
+  font-size: 2.5em;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+footer {
+  background-color: rgb(48, 47, 47);
+  padding: 8px 30px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+footer svg {
+  width: 30px;
+  height: 30px;
+  fill: black;
+  margin-right: 10px;
+}
+footer svg:hover {
+  fill: white;
+}
+footer div img {
+  width: 150px;
+}
+footer div ul {
+  list-style: none;
+  margin-top: 20px;
+}
+footer div ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+footer div ul li a:hover {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-dark {
+  color: black;
+}
+
+.text-grey {
+  color: grey;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.bg-grey {
+  background-image: url(../img/bg\ angels.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  color: white;
+}
+
+.bg-colorgrey {
+  background-color: grey;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.container {
+  background-image: url(../img/Black\ Storm\ Clouds\ Wall\ Mural\ -\ Murals\ Your\ Way.jpg);
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 50px;
+  border: solid black 2px;
+  overflow: auto;
+  border-radius: 10px;
+  color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: justify;
+}
+
+.titles {
+  background-image: url(../img/Black\ Storm\ Clouds\ Wall\ Mural\ -\ Murals\ Your\ Way.jpg);
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 50px;
+  border: none black 2px;
+  overflow: auto;
+  border-radius: 10px;
+  color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.btn.bg-white.text-bold.mt-3.button-contact:hover {
+  background-color: black;
+  color: yellow;
+}
+
+.botonera {
+  background-color: rgb(48, 47, 47);
+  height: 70px;
+}
+.botonera a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 300;
+}
+.botonera img {
+  width: 150px;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.tienda {
+  display: grid;
+  grid-template-columns: 20% 1fr 1fr;
+  grid-template-rows: 80px 300px 300px 300px;
+  grid-template-areas: "actions actions actions" "filters prod1 prod1" "filters prod2 prod3" "filters prod2 prod4";
+  gap: 8px;
+  padding: 20px;
+}
+.tienda .filters {
+  padding: 0 20px 30px 30px;
+  grid-area: filters;
+}
+.tienda .filters a {
+  color: white;
+  font-size: 0.8em;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+}
+.tienda .filters a:hover {
+  color: black;
+}
+.tienda .filters span {
+  display: block;
+  color: black;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  font-size: 1em;
+  font-weight: 600;
+}
+.tienda .filters label {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: black;
+  font-weight: 600;
+}
+.tienda .filters select {
+  color: white;
+  border: none;
+  background-color: rgb(96, 92, 92);
+  margin-bottom: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  padding: 5px;
+}
+.tienda .filters li {
+  padding-left: 10px;
+  list-style: none;
+}
+.tienda .actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 10px;
+  padding: 0 30px;
+  grid-area: actions;
+}
+.tienda .actions button {
+  margin-left: 10px;
+  background-color: rgb(67, 64, 65);
+  color: black;
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+}
+.tienda .actions button:hover {
+  background-color: white;
+}
+.tienda .actions input {
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(67, 64, 65);
+  color: white;
+}
+.tienda .prod1 {
+  grid-area: prod1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+}
+.tienda .prod1 p {
+  width: 60%;
+  margin-left: 20px;
+  text-align: center;
+}
+.tienda .prod2 {
+  grid-area: prod2;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  padding: 0 80px;
+}
+.tienda .prod2 p {
+  text-align: center;
+  margin-top: 25px;
+}
+.tienda .prod3 {
+  grid-area: prod3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tienda .prod3 p {
+  text-align: center;
+  margin-top: -50px;
+}
+.tienda .prod3 img {
+  margin-top: -80px;
+}
+.tienda .prod4 {
+  grid-area: prod4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod4 p {
+  margin-top: -60px;
+  text-align: center;
+}
+.tienda .prod4 img {
+  margin-top: -80px;
+}
+.tienda section img {
+  width: 350px;
+}
+
+.products-home {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.products-home figure {
+  width: 30%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.products-home figure img {
+  width: 310px;
+}
+.products-home figure figcaption {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 600;
+  border: solid black 2px;
+  padding: 6px;
+  border-radius: 8px;
+  background-image: url(../img/Black\ Storm\ Clouds\ Wall\ Mural\ -\ Murals\ Your\ Way.jpg);
+  color: grey;
+}
+.products-home figure p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.products-home figure button {
+  border: none;
+  background-color: rgb(96, 92, 92);
+  padding: 6px;
+  color: white;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.products-home figure button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+@media (width < 1024px) {
+  .products-home figure {
+    width: 48%;
+  }
+}
+@media (width < 992px) {
+  .botonera {
+    height: auto;
+  }
+}
+@media (width < 768px) {
+  .products-home figure {
+    width: 100%;
+  }
+  .products-home figure button {
+    width: 100%;
+  }
+  .products-home figure figcaption {
+    text-align: center;
+  }
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+  nav img {
+    margin-top: -50px;
+    margin-bottom: -40px;
+  }
+  main h1 {
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+  footer svg {
+    margin-top: 10px;
+  }
+  footer div img {
+    margin-top: -40px;
+    margin-bottom: -40px;
+  }
+  footer div ul {
+    margin-bottom: 10px;
+  }
+  .tienda {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "actions" "filters" "prod1" "prod2" "prod3" "prod4";
+    gap: 15px;
+  }
+  .tienda .actions {
+    justify-content: center;
+    width: 100%;
+  }
+  .tienda .filters span,
+  .tienda .filters ul,
+  .tienda .filters label,
+  .tienda .filters input[type=checkbox] {
+    display: none;
+  }
+  .tienda select {
+    width: 100%;
+    padding: 6px;
+  }
+  .tienda .prod1 {
+    flex-direction: column;
+  }
+  .tienda .prod1 p {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .tienda .prod1,
+  .tienda .prod2 {
+    padding: 0 10px;
+  }
+  .tienda .prod2 p {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .tienda .prod3 p {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .tienda .prod3 img {
+    padding-top: 30px;
+  }
+  .tienda .prod4 p {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .tienda .prod4 img {
+    padding-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
