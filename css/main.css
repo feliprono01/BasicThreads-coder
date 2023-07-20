@@ -158,9 +158,22 @@ footer div ul li a:hover {
   text-align: center;
 }
 
+.btn.bg-white.text-bold.mt-3.button-contact {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 6px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+}
+
 .btn.bg-white.text-bold.mt-3.button-contact:hover {
-  background-color: black;
-  color: yellow;
+  background-color: rgb(255, 255, 255);
+  color: rgb(186, 166, 186);
+  padding: 6px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
 }
 
 .botonera {
@@ -172,6 +185,15 @@ footer div ul li a:hover {
   color: white;
   font-size: 1em;
   font-weight: 300;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.botonera a:hover {
+  color: black;
+  background-size: 100% 2px;
 }
 .botonera img {
   width: 150px;

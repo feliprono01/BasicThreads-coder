@@ -1,0 +1,23 @@
+//mixins
+
+@mixin textos ($size,$line,$weight){
+    font-size: $size;
+    line-height: $line;
+    font-weight: $weight;
+}
+
+@mixin titulos-principales ($size,$padding){
+    font-size:$size;
+    padding: $padding;
+ }
+
+ @mixin custom-button($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 6px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+  }
+
+  

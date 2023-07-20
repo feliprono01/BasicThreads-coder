@@ -23,16 +23,22 @@ h1,h2{
     color:$secondaryColor;
 }
 h1{
-    font-size:$textXx;
-    padding: 20px;
+    @include titulos-principales(2.5em,20px)
 }
+// h1{
+//     font-size:$textXx;
+//     padding: 20px;
+// }
 h2{
     font-size:$textXl;
 }
+// p{
+//     font-size:$textXm;
+//     line-height: 1.2em;
+//     font-weight: $textLight;
+// }
 p{
-    font-size:$textXm;
-    line-height: 1.2em;
-    font-weight: $textLight;
+    @include textos(1.2em,1.2em,300)
 }
 
 //footer
@@ -153,9 +159,13 @@ footer{
 
 //contacto
 
-.btn.bg-white.text-bold.mt-3.button-contact:hover{
-    background-color: $keyColor;
-    color: $yellow;
-}
+.btn.bg-white.text-bold.mt-3.button-contact {
+    @include custom-button(rgb(255, 255, 255), rgb(0, 0, 0));
+  }
+  
+  .btn.bg-white.text-bold.mt-3.button-contact:hover {
+    @include custom-button(rgb(255, 255, 255), rgb(186, 166, 186));
+  }
+
 
 
