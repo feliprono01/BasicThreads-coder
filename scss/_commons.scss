@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 header img{
     width: 100%;
@@ -146,7 +147,7 @@ footer{
     background-image: url(../img/Black\ Storm\ Clouds\ Wall\ Mural\ -\ Murals\ Your\ Way.jpg);
     width: 90%;
     height: auto;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 20px 50px;
     border: none black 2px;
     overflow: auto;

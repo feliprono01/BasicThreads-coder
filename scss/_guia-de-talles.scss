@@ -1,0 +1,35 @@
+// .guia-de-talles{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 50px;
+//     margin-bottom: 50px;
+//     padding-left: 370px;
+//     img{
+//         border-radius: 10px;
+//         overflow: hidden;
+//         width: 310px;
+//         height: auto;
+//         border: solid rgb(0, 0, 0) 5px;
+//     }
+// }
+.guia-de-talles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    img {
+        border-radius: 10px;
+        overflow: hidden;
+        height: auto;
+        border: solid rgb(0, 0, 0) 5px;
+        margin: 10px; 
+        width: 400px;
+    } 
+  }
+  
+  

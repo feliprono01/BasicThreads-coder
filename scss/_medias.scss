@@ -7,6 +7,11 @@
     .botonera{
         height: auto;
     }
+    .guia-de-talles{
+        img{
+            margin-bottom: 50px;
+        }
+    }
 }
 @media (width < 768px){
     .products-home figure{
@@ -100,5 +105,20 @@
     }
     .tienda .prod4 img{
         padding-top: 30px;
+    }
+    .container{
+        padding-left: 8px;
+        padding-right: 25px;
+    }
+    .guia-de-talles{
+        margin-right: 20px;
+        div{
+            img{
+            width: 100%;
+            }
+        }
+    }
+    .container-404{
+        width: 75%;
     }
 }
